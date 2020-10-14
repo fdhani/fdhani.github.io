@@ -1,0 +1,26 @@
+.input-container {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 32px;
+}
+
+.input-group {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 32px;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    resize: none;
+}

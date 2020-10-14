@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Slack Alert Template</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <h1>Create Slack Alert Template</h1>
+    <div class="input-container" id="webhook-inputs">
+        <h3>Webhook</h3>
+
+        <div class="input-group">
+            <label>Username</label>
+            <input name="username" type="text" placeholder="example: som-error" value="icarus-error" />
+        </div>
+
+        <div class="input-group">
+            <label>Emoji</label>
+            <input name="emoji" type="text" placeholder="example: :alert:" value=":alert:" />
+        </div>
+
+        <div class="input-group">
+            <label>Slack Channel</label>
+            <input name="slackChannel" type="text" placeholder="slack channel"
+                value="https://hooks.slack.com/services/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" />
+        </div>
+
+        <div class="input-group">
+            <label>Message</label>
+            <input name="message" type="text" value="#description#" />
+        </div>
+
+        <div class="input-group">
+            <label>SLACK ID</label>
+            <input name="slackId" type="text" placeholder="UAX2EAZ4J" value="UAX2EAZ4J" />
+        </div>
+
+        <div class="input-group">
+            <label>Module / Path</label>
+            <input name="path" type="text" />
+        </div>
+
+        <textarea name="result" id="webhook-result" cols="30" rows="10" placeholder="result will be here"></textarea>
+    </div>
+    <div class="input-container" id="trigger-inputs">
+        <h3>Trigger</h3>
+
+        <div class="input-group">
+            <label>Function</label>
+            <input name="function" type="text" placeholder="example: count" value="count" />
+        </div>
+
+        <div class="input-group">
+            <label>Threshold</label>
+            <input name="threshold" type="text" placeholder="example: 10" value="10" />
+        </div>
+
+        <div class="input-group">
+            <label>Range</label>
+            <input name="range" type="text" placeholder="example: 10m" value="10m" />
+        </div>
+
+        <div class="input-group">
+            <label>Query</label>
+            <input name="query" type="text" placeholder="input query here" value="" />
+        </div>
+
+        <div class="input-group">
+            <label>Log File</label>
+            <input name="logFile" type="text" placeholder="example: /var/etc/error.log" value="" />
+        </div>
+
+        <textarea name="trigger-result" id="trigger-result" cols="30" rows="10" placeholder="result will be here"></textarea>
+    </div>
+</body>
+<script defer src="./scripts/createWebhookResult.js"></script>
+<script defer src="./scripts/createTriggerResult.js"></script>
+<script defer src="./scripts/index.js"></script>
+
+</html>
